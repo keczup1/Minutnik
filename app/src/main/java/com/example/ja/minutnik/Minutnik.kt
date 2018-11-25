@@ -31,7 +31,7 @@ class Minutnik : AppCompatActivity() {
         val minsecbutton=findViewById<Button>(R.id.minsecbutton)
         val startbutton=findViewById<Button>(R.id.StartButton)
         val stopbutton=findViewById<Button>(R.id.StopButton)
-        val resetbutton=findViewById<Button>(R.id.Resetbutton)
+        val resetbutton=findViewById<Button>(R.id.ResetButton)
 
         fun MinTenMin(){
             var t=tenmintextview.text.toString().toInt()
