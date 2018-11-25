@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Minutnik" android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="355dp" android:gravity="center" android:id="@+id/PlusButtonsContainer">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/TopButtonsTextView">
+            <Button
+                    android:text="+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/TenMinutesPlusButton"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"/>
+            <Button
+                    android:text="+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/MinutesPlusButton" android:layout_weight="1"
+            />
+            <TextView
+                    android:text="spacing"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content" android:id="@+id/topspacing" android:layout_weight="1"
+                    android:visibility="invisible"/>
+            <Button
+                    android:text="+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/TenSecondsPlusButton"
+                    android:layout_weight="1"
+            />
+            <Button
+                    android:text="+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/SecondsPlusButton" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent" android:id="@+id/TimeContainer" android:layout_height="wrap_content"
+                android:gravity="center">
+            <TextView
+                    android:text="2"
+                    android:layout_height="wrap_content" android:id="@+id/TenMinutesTextView" android:layout_weight="1"
+                    android:layout_width="wrap_content" android:gravity="center" android:textSize="36sp"
+                    android:lineSpacingExtra="30sp"/>
+            <TextView
+                    android:text="0"
+                    android:layout_height="wrap_content" android:id="@+id/MinutesTextView" android:layout_weight="1"
+                    android:layout_width="wrap_content" android:gravity="center" android:textSize="36sp"
+                    android:lineSpacingExtra="30sp"/>
+            <TextView
+                    android:text=":"
+                    android:layout_height="wrap_content" android:id="@+id/SpaceTextView" android:layout_weight="1"
+                    android:layout_width="wrap_content" android:gravity="center" android:textSize="36sp"
+                    android:lineSpacingExtra="30sp"/>
+            <TextView
+                    android:text="3"
+                    android:layout_height="wrap_content" android:id="@+id/TenSecondsTextView" android:layout_weight="1"
+                    android:layout_width="wrap_content" android:gravity="center" android:textSize="36sp"
+                    android:lineSpacingExtra="30sp"/>
+            <TextView
+                    android:text="4"
+                    android:layout_height="wrap_content" android:id="@+id/SecondsTextView" android:layout_weight="1"
+                    android:layout_width="wrap_content" android:gravity="center" android:textSize="36sp"
+                    android:lineSpacingExtra="30sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/TenMinutesMinusButton"
+                    android:layout_weight="1"/>
+            <Button
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/MinutesMinusButton"
+                    android:layout_weight="1"/>
+            <TextView
+                    android:text="spacing"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content" android:id="@+id/bottomspacing" android:layout_weight="1"
+                    android:visibility="invisible"/>
+            <Button
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/TenSecondsMinusButton"
+                    android:layout_weight="1"/>
+            <Button
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/SecondsMinusButton"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:id="@+id/ButtonContainer"
+            android:gravity="center_vertical"
+            tools:layout_editor_absoluteY="251dp" tools:layout_editor_absoluteX="2dp">
+        <Button
+                android:text="Start"
+                android:layout_width="wrap_content"
+                android:layout_height="74dp" android:id="@+id/StartButton" android:layout_weight="1"
+        />
+        <Button
+                android:text="Stop"
+                android:layout_width="wrap_content"
+                android:layout_height="74dp" android:id="@+id/StopButton" android:layout_weight="1"/>
+        <Button
+                android:text="Pause"
+                android:layout_width="wrap_content"
+                android:layout_height="74dp" android:id="@+id/PauseButton" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
